@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import * as styles from './layout.css'
 
-export default ({ children }: React.Props<void>) => (
+const Container: React.FC = ({ children }) => (
   <div className={styles.layout}>{children}</div>
 )
+export default Container

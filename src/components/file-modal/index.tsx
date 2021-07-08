@@ -7,16 +7,18 @@ import { AlbumFile } from '../../furui/models'
 type OnClose = () => void
 type OpenInNewTab = (url: string) => void
 
-type Opts = {
+type Opts = Readonly<{
   openInNewTab: OpenInNewTab
   onClose: OnClose
   file: AlbumFile
-}
-type ChildOpts = Omit<Opts, 'openInNewTab'> & {
-  onOpen: (
-    e: React.MouseEvent<HTMLImageElement | HTMLVideoElement, MouseEvent>
-  ) => void
-}
+}>
+type ChildOpts = Readonly<
+  Omit<Opts, 'openInNewTab'> & {
+    onOpen: (
+      e: React.MouseEvent<HTMLImageElement | HTMLVideoElement, MouseEvent>
+    ) => void
+  }
+>
 
 const ImageModal: React.FC<ChildOpts> = ({ onOpen, file: image, onClose }) => {
   return (

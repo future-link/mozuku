@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Account } from '../../furui/models'
 import * as styles from './index.css'
 
-type AvatarOpts = { account: Account; className?: string }
+type AvatarOpts = Readonly<{ account: Account; className?: string }>
 
 function DummyAvatar({ name, className }: { name: string; className: string }) {
   return (

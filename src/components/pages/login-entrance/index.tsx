@@ -9,7 +9,9 @@ import {
 
 import * as styles from './login.css'
 
-export default ({ authURL }: { authURL: URL }) => (
+export type LoginEntranceProps = Readonly<{ authURL: URL }>
+
+const LoginEntrance: React.FC<LoginEntranceProps> = ({ authURL }) => (
   <Container>
     <HeaderContainer>
       <HeaderLogo disabled={true} />
@@ -29,3 +31,4 @@ export default ({ authURL }: { authURL: URL }) => (
     </BodyContainer>
   </Container>
 )
+export default LoginEntrance

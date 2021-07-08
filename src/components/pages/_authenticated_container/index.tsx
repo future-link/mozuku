@@ -16,7 +16,9 @@ const AppProvider: React.FC = ({ children }) => (
   <BrowserProvider>{children}</BrowserProvider>
 )
 
-const AuthenticatedContainer: React.FC<{ me?: Account }> = ({
+export type AuthenticatedContainerProps = Readonly<{ me?: Account }>
+
+const AuthenticatedContainer: React.FC<AuthenticatedContainerProps> = ({
   me,
   children,
 }) => {

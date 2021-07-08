@@ -8,7 +8,9 @@ import {
   BodyContainer,
 } from '../_layout'
 
-const NotFound: React.FC<{ pathname: string }> = ({ pathname }) => (
+export type NotFoundProps = Readonly<{ pathname: string }>
+
+const NotFound: React.FC<NotFoundProps> = ({ pathname }) => (
   <Container>
     <HeaderContainer>
       <HeaderLogo />

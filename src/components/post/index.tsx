@@ -9,7 +9,11 @@ export type PostProps = Readonly<{
   setModalContent: (albumfile: AlbumFile | null) => void
   setInReplyTo: React.Dispatch<React.SetStateAction<number | null>>
 }>
-export const Post = ({ postId, setModalContent, setInReplyTo }: PostProps) => {
+export const Post: React.FC<PostProps> = ({
+  postId,
+  setModalContent,
+  setInReplyTo,
+}) => {
   return useObserver(() => {
     const post = appStore.posts.get(postId)
     if (post == null) {
