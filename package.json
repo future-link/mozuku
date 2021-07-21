@@ -13,7 +13,7 @@
     "cafy": "^15.2.1",
     "date-fns": "^2.16.1",
     "date-fns-tz": "^1.0.12",
-    "filesize": "^6.1.0",
+    "filesize": "^7.0.0",
     "mobx": "^5.15.7",
     "mobx-react-lite": "^2.2.2",
     "parcel": "^1.12.4",
