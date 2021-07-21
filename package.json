@@ -12,7 +12,7 @@
     "axios": "^0.20.0",
     "cafy": "^15.2.1",
     "date-fns": "^2.16.1",
-    "date-fns-tz": "^1.0.12",
+    "date-fns-tz": "^1.1.4",
     "filesize": "^6.1.0",
     "mobx": "^5.15.7",
     "mobx-react-lite": "^2.2.2",
