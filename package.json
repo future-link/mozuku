@@ -11,7 +11,7 @@
     "autoprefixer": "^9.8.6",
     "axios": "^0.20.0",
     "cafy": "^15.2.1",
-    "date-fns": "^2.16.1",
+    "date-fns": "^2.22.1",
     "date-fns-tz": "^1.0.12",
     "filesize": "^6.1.0",
     "mobx": "^5.15.7",
